@@ -10,6 +10,7 @@ begin intInput;
 repeat
  try
   stdout.put( "Insira um inteiro entre -128 e +127: " );
+  stdin.readLn();
   stdin.geti8();
   mov( al, i8 );
   exception( ex.ValueOutOfRange );
@@ -22,6 +23,7 @@ until(al == i8 );
 repeat
  try
   stdout.put( "Insira um inteiro entre -32768 e +32767: " );
+  stdin.readLn();
   stdin.geti16();
   mov( ax, i16 );
  exception( ex.ValueOutOfRange );
@@ -34,6 +36,7 @@ until( ax == i16 );
 repeat
  try
   stdout.put( "Insira um inteiro entre +/- 2 bihoes: " );
+  stdin.readLn();
   stdin.geti32();
   mov( eax, i32 );
  exception( ex.ValueOutOfRange );
