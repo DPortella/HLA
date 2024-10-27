@@ -1,6 +1,6 @@
 program index;
 #include("stdlib.hhf")
-static
+readonly
 var1: int8 := 3;
 var2: int8 := 1;
       int8 5,2,10;
