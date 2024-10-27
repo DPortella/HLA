@@ -1,13 +1,12 @@
 program Indirect;
 #include( "stdlib.hhf" )
 
-static
+storage
 j: int32;
 
 begin Indirect;
-stdin.get(eax);
-mov( &j, ebx );
-mov( eax, [ebx] );
-stdout.put(j);
-
+ stdin.get(eax);
+ mov( &j, ebx );
+ mov( eax, [ebx] );
+ stdout.put(j);
 end Indirect;
