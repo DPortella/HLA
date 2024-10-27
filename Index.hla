@@ -1,0 +1,11 @@
+program index;
+#include("stdlib.hhf")
+static
+var1: int8 := 3;
+var2: int8 := 1;
+      int8 5,2,10;
+
+begin index;
+ mov( var2[ ebx - 1 ], al );
+ stdout.put(al);
+end index;
