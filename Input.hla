@@ -1,6 +1,7 @@
 program intInput;
 #include( "stdlib.hhf" )
-var
+
+storage
  i8: int8;
  i16: int16;
  i32: int32;
